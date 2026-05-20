@@ -38,6 +38,17 @@ function loadModel(filename) {
 
     loader.load(filename, function(gltf) {
         model = gltf.scene;
+
+        // Cans face front
+        model.rotation.y = Math.PI;
+
+        // Centre the models
+        const box = new THREE.Box3().setFromObject(model);
+        const center = box.getCenter(new THREE.Vector3());
+        model.position.x = -center.x;
+        model.position.y = -center.y;
+        model.position.z = -center.z;
+
         scene.add(model);
 
         if (isWireframe) {
