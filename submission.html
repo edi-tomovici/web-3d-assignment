@@ -13,39 +13,22 @@
 
     <main class="about-content">
         <section>
-            <h2>1. ITS Web Server URL</h2>
-            <p>The live 3D App is hosted at:</p>
+            <h2>ITS Web Server URL</h2>
             <p><a href="http://users.sussex.ac.uk/~eat29/3dapp/assignment/" target="_blank">http://users.sussex.ac.uk/~eat29/3dapp/assignment/</a></p>
         </section>
 
         <section>
-            <h2>2. GitHub Codebase URL</h2>
-            <p>The full codebase, including the Blender source files, is available at:</p>
+            <h2>GitHub Codebase URL</h2>
             <p><a href="https://github.com/edi-tomovici/web-3d-assignment" target="_blank">https://github.com/edi-tomovici/web-3d-assignment</a></p>
         </section>
 
         <section>
-            <h2>3. GitHub VRML/X3D Models URL</h2>
-            <p>This project does not use VRML or X3D. The 3D models were built in Blender and exported as .glb (glTF binary) files, loaded with Three.js via the GLTFLoader. The .glb files and the original .blend source files are included in the GitHub repository linked above, inside the <code>models/</code> and <code>blender/</code> folders respectively.</p>
-        </section>
-
-        <section>
-            <h2>4. Deeper Understanding Statement</h2>
-            <p>Beyond the lab work, this project demonstrates the following:</p>
-            <ul>
-                <li><strong>Three.js with ES module import maps:</strong> the labs covered X3DOM, but I chose Three.js because it integrates better with Blender via glTF and has a much larger community. I loaded it through an import map so that the addons (GLTFLoader, OrbitControls) could be imported using clean ES module syntax.</li>
-                <li><strong>Three-point lighting setup:</strong> I used an ambient light combined with a directional key light to give the cans depth and avoid flat shading. The directional light can be toggled by the user from the interface.</li>
-                <li><strong>Automatic model centring:</strong> rather than hard-coding positions, the loader uses <code>THREE.Box3</code> to compute the model's bounding box and reposition it so its centre sits at the world origin. This works for any model regardless of how it was built in Blender.</li>
-                <li><strong>Wireframe persistence across model swaps:</strong> swapping a model loads it with fresh materials, so the wireframe flag has to be re-applied inside the loader callback rather than just on the button click. This was the trickiest bug to track down because of the async timing.</li>
-                <li><strong>Version control with GitHub:</strong> the codebase is managed in a public Git repository so the development history is visible.</li>
-            </ul>
-
-            <p><strong>Feedback from testing:</strong> I tested the app in Chrome and Opera GX during week 11. The site is fully functional: all three models load, the wireframe and light toggles work and persist correctly when switching cans, the spin animation runs for two seconds and stops cleanly, and the description text updates with each model. The console is clean of errors on the live ITS server. One limitation noted during testing is that the 3D canvas itself is mouse-only — keyboard rotation would be a useful accessibility addition with more time.</p>
+            <h2>3D Models</h2>
+            <p>This project uses Three.js with .glb (glTF binary) models built in Blender. The .glb files and original .blend sources are in the GitHub repository above, in the models and blender folders.</p>
         </section>
 
         <section>
             <h2>Navigation</h2>
-            <p>From here you can also visit:</p>
             <ul>
                 <li><a href="index.html">Home / 3D Viewer</a></li>
                 <li><a href="about.html">About</a></li>
