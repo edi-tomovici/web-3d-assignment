@@ -1,0 +1,140 @@
+/* Website Stylesheet */
+
+body {
+    background-color: #e8eef2;
+    color: #1a2332;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    padding-top: 40px;
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    padding: 60px 20px 40px;
+    background: linear-gradient(180deg, #e8eef2 0%, #c9d6e2 100%);
+    border-bottom: 3px solid #e63946;
+}
+
+h1 {
+    padding-top: 0;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #e63946 0%, #ff6b7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header p {
+    margin: 15px 0 0;
+    font-size: 16px;
+    color: #4a5a6a;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #c52836;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+footer {
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #c9d6e2;
+}
+
+footer a {
+    color: #e63946;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#description {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-left: 4px solid #e63946;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#description h2 {
+    margin-top: 0;
+    color: #e63946;
+}
+
+#canvas-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    min-height: 450px;
+    border-radius: 12px;
+    border: 1px solid #c9d6e2;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 30px;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.about-content section {
+    margin-bottom: 40px;
+}
+
+.about-content h2 {
+    color: #e63946;
+    border-bottom: 1px solid #c9d6e2;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+.about-content ul {
+    margin-left: 20px;
+}
+
+.about-content code {
+    background-color: #1a2332;
+    color: #e8eef2;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}

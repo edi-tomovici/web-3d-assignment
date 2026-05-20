@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>About — Energy HQ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>About Energy HQ</h1>
+        <p>How this site was built</p>
+    </header>
+
+    <main class="about-content">
+        <section>
+            <h2>The Project</h2>
+            <p>Energy HQ is a 3D web app I created for my third year Web 3D Applications module. 
+                The assignment required at least 3 interactive 3D models. 
+                I picked energy drinks because their can shapes were appropriate for a Blender beginner.</p>
+        </section>
+
+        <section>
+            <h2>Design Choices</h2>
+            <p>I chose a light grey background to help the cans stand out, and used red accents as a nod to the Red Bull branding. 
+                The 3D viewer is placed in the center, with controls below it. 
+                The description card has a red stripe on the left to catch attention without taking over the page.</p>
+        </section>
+
+        <section>
+            <h2>The 3D Models</h2>
+            <p>
+                I made all three cans in Blender 5, starting with a basic cylinder shape. 
+                I used smooth shading to hide the low number of polygons. 
+                For textures, I used UV unwrapping with cylinder projection, which was the trickiest part and took the most trial and error. 
+            </p>
+        </section>
+
+        <section>
+            <h2>The Web App</h2>
+            <p>The app is built with plain HTML, CSS, and JS and uses Three.js via an ES module import map. 
+                I picked Three.js over X3DOM because it has a larger community and works better with Blender via glTF.</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Switch between three energy drink models.</li>
+                <li>OrbitControls for camera rotation, pan, and zoom.</li>
+                <li>Wireframe toggle that continues across model swaps.</li>
+                <li>Directional light toggle.</li>
+                <li>Click-triggered spin animation.</li>
+                <li>Description text that updates with each model.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Challenges</h2>
+            <p>While building the app, the trickiest bug was getting the wireframe toggle to persist when switching models, 
+                new models loaded with fresh materials, so I had to apply the wireframe state inside the loader callback rather than just on the button click. 
+                The async timing took a couple of tries to get right.</p>
+        </section>
+
+        <section>
+            <h2>Testing</h2>
+            <p>I tested the app in Chrome and Opera GX on Windows. 
+                All buttons work as expected, the wireframe toggle remains active when switching models, 
+                the spin animation runs for 2 seconds and stops smoothly, and the console shows clean load logs for all 3 models, with no errors.</p>
+        </section>
+
+        <section>
+            <h2>Accessibility</h2>
+            <p>I considered the following when building the page:</p>
+            <ul>
+                <li>Used semantic HTML tags (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>) so screen readers can understand the page structure.</li>
+                <li>Set <code>lang="en-GB"</code> on the html tag so screen readers use the right pronunciation.</li>
+                <li>One limitation: the 3D canvas itself is mouse-only at the moment. Keyboard rotation would be something to add with more time.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Site Map</h2>
+            <ul>
+                <li><a href="index.html">Home</a> -- The main 3D viewer with model selection, wireframe toggle, light toggle, and spin animation.</li>
+                <li><a href="about.html">About</a> -- This page, design choices, accessibility, and testing notes.</li>
+                <li><a href="originality.html">Statement of Originality</a> -- Declaration of work and external resources.</li>
+                <li><a href="references.html">References</a> -- Full list of libraries, tools, and tutorials used.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="index.html">Home</a>
+        <a href="originality.html">Statement of Originality</a>
+        <a href="references.html">References</a>
+    </footer>
+
+</body>
+</html>

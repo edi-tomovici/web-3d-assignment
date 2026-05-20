@@ -1,0 +1,53 @@
+<!-- Main page -->
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <title>Energy HQ</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Main heading -->
+         <header>
+            <h1>Energy HQ</h1>
+            <p>Your one stop for energy!</p>
+         </header>
+         
+         <main>
+            <div id="canvas-container"></div>
+            <!-- Buttons to switch models and toggle options -->
+            <div id="controls">
+                <button id="btn-redbull">Red Bull</button>
+                <button id="btn-monster">Monster</button>
+                <button id="btn-prime">Prime</button>
+                <button id="btn-wireframe">Toggle Wireframe</button>
+                <button id="btn-light">Toggle Light</button>
+                <button id="btn-spin">Spin</button>
+            </div>
+            <!-- Short company description -->
+            <div id="description">
+                <h2>Choose a can to learn more!</h2>
+                <p>Click a button to view the 3D model.</p>
+            </div>
+         </main>
+
+         <!-- Footer with links to other pages -->
+        <footer>
+            <a href="about.html">About</a>
+            <a href="originality.html">Statement of Originality</a>
+            <a href="references.html">References</a>
+        </footer>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
